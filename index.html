@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shubhadisha Child Academy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+}
+
+header{
+    background:#075e54;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.logo{
+    width:75px;
+    height:75px;
+    background:white;
+    color:#075e54;
+    border-radius:50%;
+    margin:0 auto 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+}
+
+header h1{
+    font-size:27px;
+    margin-bottom:6px;
+}
+
+header p{
+    margin:5px;
+}
+
+nav{
+    background:#064c44;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:5px 8px;
+    display:inline-block;
+    font-size:15px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#087f70,#00a896);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.button{
+    display:inline-block;
+    background:#ffc107;
+    color:#222;
+    padding:12px 22px;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+    margin:5px;
+}
+
+section{
+    padding:45px 7%;
+}
+
+.title{
+    text-align:center;
+    color:#075e54;
+    margin-bottom:25px;
+    font-size:27px;
+}
+
+.about{
+    text-align:center;
+    line-height:1.9;
+    max-width:800px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 3px 12px #0001;
+}
+
+.card .icon{
+    font-size:42px;
+}
+
+.card h3{
+    color:#075e54;
+    margin:12px 0;
+}
+
+.notice{
+    background:white;
+    padding:16px;
+    margin:10px 0;
+    border-left:5px solid #075e54;
+    border-radius:5px;
+}
+
+.admission{
+    background:#e8f7f4;
+    text-align:center;
+}
+
+.form{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 12px #0001;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.form button{
+    border:0;
+    cursor:pointer;
+}
+
+.contact{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    line-height:2;
+    max-width:700px;
+    margin:auto;
+}
+
+footer{
+    background:#063f39;
+    color:white;
+    text-align:center;
+    padding:25px;
+    line-height:1.8;
+}
+
+@media(max-width:700px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    header h1{
+        font-size:23px;
+    }
+
+    nav a{
+        margin:4px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🎓</div>
+
+    <h1>Shubhadisha Child Academy</h1>
+
+    <p>Education • Discipline • Success</p>
+
+    <p>📍 Bhandani, Dhupguri, Jalpaiguri</p>
+
+</header>
+
+<nav>
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#notice">Notice</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Welcome to Shubhadisha Child Academy</h2>
+
+    <p>শিক্ষাই আমাদের ভবিষ্যতের শক্তি</p>
+
+    <a class="button" href="#admission">
+        📝 Admission Open
+    </a>
+
+    <a class="button" href="#contact">
+        📞 Contact School
+    </a>
+
+</section>
+
+<section id="about">
+
+    <h2 class="title">About Our School</h2>
+
+    <div class="about">
+
+        <p>
+            Shubhadisha Child Academy শিক্ষার্থীদের
+            মানসম্মত শিক্ষা, শৃঙ্খলা ও নৈতিক মূল্যবোধের
+            মাধ্যমে ভবিষ্যতের জন্য প্রস্তুত করতে কাজ করে।
+        </p>
+
+    </div>
+
+</section>
+
+<section id="academics">
+
+    <h2 class="title">Our Academics</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Quality Education</h3>
+            <p>মানসম্মত ও আধুনিক শিক্ষা ব্যবস্থা।</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Experienced Teachers</h3>
+            <p>দক্ষ ও দায়িত্বশীল শিক্ষক-শিক্ষিকা।</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏆</div>
+            <h3>Student Development</h3>
+            <p>শিক্ষার্থীদের সর্বাঙ্গীণ বিকাশ।</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="notice">
+
+    <h2 class="title">Notice Board</h2>
+
+    <div class="notice">
+        📢 নতুন শিক্ষাবর্ষের ভর্তি কার্যক্রম চলছে।
+    </div>
+
+    <div class="notice">
+        📢 পরীক্ষার সময়সূচি শীঘ্রই প্রকাশ করা হবে।
+    </div>
+
+    <div class="notice">
+        📢 অভিভাবকদের বিদ্যালয়ের অফিসে যোগাযোগ করার অনুরোধ করা হচ্ছে।
+    </div>
+
+</section>
+
+<section class="admission" id="admission">
+
+    <h2 class="title">Online Admission</h2>
+
+    <div class="form">
+
+        <input type="text" placeholder="Student Name">
+
+        <input type="text" placeholder="Father's Name">
+
+        <input type="text" placeholder="Mother's Name">
+
+        <input type="date">
+
+        <select>
+            <option>Select Class</option>
+            <option>Nursery</option>
+            <option>LKG</option>
+            <option>UKG</option>
+            <option>Class 1</option>
+            <option>Class 2</option>
+            <option>Class 3</option>
+            <option>Class 4</option>
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            <option>Class 8</option>
+            <option>Class 9</option>
+            <option>Class 10</option>
+        </select>
+
+        <input type="tel" placeholder="Mobile Number">
+
+        <textarea rows="4"
+        placeholder="Address"></textarea>
+
+        <button class="button" type="button"
+        onclick="alert('Admission form submitted successfully!')">
+            Submit Admission
+        </button>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact">
+
+        <h3>Shubhadisha Child Academy</h3>
+
+        <p>📍 Bhandani, Dhupguri, Jalpaiguri</p>
+
+        <p>📞 9002062231</p>
+
+        <p>👨‍💼 Head Teacher: Ramkrishna Roy</p>
+
+        <p>🕘 School Time: 9:00 AM – 4:00 PM</p>
+
+        <br>
+
+        <a class="button" href="tel:9002062231">
+            📞 Call School
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Shubhadisha Child Academy</h3>
+
+    <p>Education • Discipline • Success</p>
+
+    <p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
