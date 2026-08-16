@@ -4,205 +4,182 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shubhadisha Child Academy</title>
+<title>Shubhadisha Child Academy | School Management</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f4f7fb;
-    color:#222;
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#f4f7fb;
+  color:#222;
+  line-height:1.6;
 }
 
 header{
-    background:#075e54;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
+  background:linear-gradient(135deg,#075e54,#00897b);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
 }
 
 .logo{
-    width:75px;
-    height:75px;
-    background:white;
-    color:#075e54;
-    border-radius:50%;
-    margin:0 auto 10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  background:white;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
 }
 
 header h1{
-    font-size:27px;
-    margin-bottom:6px;
+  margin-top:12px;
+  font-size:27px;
 }
 
 header p{
-    margin:5px;
+  margin-top:5px;
 }
 
 nav{
-    background:#064c44;
-    text-align:center;
-    padding:12px;
+  background:#063f3a;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:10px;
+  position:sticky;
+  top:0;
+  z-index:10;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:5px 8px;
-    display:inline-block;
-    font-size:15px;
+  color:white;
+  text-decoration:none;
+  padding:8px 13px;
+  font-size:14px;
+}
+
+nav a:hover{
+  background:#00897b;
+  border-radius:5px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
 .hero{
-    background:linear-gradient(135deg,#087f70,#00a896);
-    color:white;
-    text-align:center;
-    padding:70px 20px;
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  margin-bottom:20px;
+  box-shadow:0 2px 8px #0001;
+  text-align:center;
 }
 
 .hero h2{
-    font-size:32px;
-    margin-bottom:15px;
+  color:#075e54;
+  margin-bottom:10px;
 }
 
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-.button{
-    display:inline-block;
-    background:#ffc107;
-    color:#222;
-    padding:12px 22px;
-    text-decoration:none;
-    border-radius:7px;
-    font-weight:bold;
-    margin:5px;
-}
-
-section{
-    padding:45px 7%;
-}
-
-.title{
-    text-align:center;
-    color:#075e54;
-    margin-bottom:25px;
-    font-size:27px;
-}
-
-.about{
-    text-align:center;
-    line-height:1.9;
-    max-width:800px;
-    margin:auto;
+.section-title{
+  color:#075e54;
+  margin:25px 0 15px;
+  border-left:5px solid #00897b;
+  padding-left:10px;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    text-align:center;
-    border-radius:12px;
-    box-shadow:0 3px 12px #0001;
-}
-
-.card .icon{
-    font-size:42px;
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 2px 7px #0001;
 }
 
 .card h3{
-    color:#075e54;
-    margin:12px 0;
+  color:#075e54;
+  margin-bottom:8px;
+}
+
+.doc{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border-bottom:1px solid #eee;
+  padding:10px 0;
+}
+
+.doc:last-child{
+  border-bottom:none;
+}
+
+.doc a{
+  background:#00897b;
+  color:white;
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:5px;
+  font-size:13px;
 }
 
 .notice{
-    background:white;
-    padding:16px;
-    margin:10px 0;
-    border-left:5px solid #075e54;
-    border-radius:5px;
-}
-
-.admission{
-    background:#e8f7f4;
-    text-align:center;
-}
-
-.form{
-    background:white;
-    max-width:600px;
-    margin:auto;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 3px 12px #0001;
-}
-
-.form input,
-.form select,
-.form textarea{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-    font-size:15px;
-}
-
-.form button{
-    border:0;
-    cursor:pointer;
+  background:#fff8e1;
+  border-left:5px solid #ffb300;
+  padding:15px;
+  border-radius:7px;
 }
 
 .contact{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    line-height:2;
-    max-width:700px;
-    margin:auto;
+  background:#075e54;
+  color:white;
+  padding:25px;
+  border-radius:12px;
+  margin-top:25px;
+}
+
+.contact a{
+  color:white;
 }
 
 footer{
-    background:#063f39;
-    color:white;
-    text-align:center;
-    padding:25px;
-    line-height:1.8;
+  background:#063f3a;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+  font-size:14px;
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
+  header h1{
+    font-size:22px;
+  }
 
-    .cards{
-        grid-template-columns:1fr;
-    }
+  .doc{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 
-    .hero h2{
-        font-size:26px;
-    }
-
-    header h1{
-        font-size:23px;
-    }
-
-    nav a{
-        margin:4px;
-    }
+  .doc a{
+    width:100%;
+    text-align:center;
+  }
 }
 </style>
 </head>
@@ -210,184 +187,320 @@ footer{
 <body>
 
 <header>
+  <div class="logo">🏫</div>
 
-    <div class="logo">🎓</div>
+  <h1>SHUBHADISHA CHILD ACADEMY</h1>
 
-    <h1>Shubhadisha Child Academy</h1>
+  <p>School Management & Document Portal</p>
 
-    <p>Education • Discipline • Success</p>
-
-    <p>📍 Bhandani, Dhupguri, Jalpaiguri</p>
-
+  <p>Jalpaiguri, West Bengal</p>
 </header>
 
 <nav>
-
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#academics">Academics</a>
-    <a href="#notice">Notice</a>
-    <a href="#admission">Admission</a>
-    <a href="#contact">Contact</a>
-
+  <a href="#home">Home</a>
+  <a href="#school">School</a>
+  <a href="#documents">Documents</a>
+  <a href="#academic">Academic</a>
+  <a href="#staff">Staff</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero" id="home">
+<div class="container">
 
-    <h2>Welcome to Shubhadisha Child Academy</h2>
+<section id="home" class="hero">
 
-    <p>শিক্ষাই আমাদের ভবিষ্যতের শক্তি</p>
+<h2>Welcome to Shubhadisha Child Academy</h2>
 
-    <a class="button" href="#admission">
-        📝 Admission Open
-    </a>
-
-    <a class="button" href="#contact">
-        📞 Contact School
-    </a>
+<p>
+এই ওয়েবসাইটে বিদ্যালয়ের গুরুত্বপূর্ণ প্রশাসনিক,
+শিক্ষাগত ও ব্যবস্থাপনা সংক্রান্ত নথি সংরক্ষণ ও
+ডাউনলোডের ব্যবস্থা রাখা হয়েছে।
+</p>
 
 </section>
 
-<section id="about">
+<h2 id="school" class="section-title">
+🏫 School Information
+</h2>
 
-    <h2 class="title">About Our School</h2>
+<div class="cards">
 
-    <div class="about">
+<div class="card">
+<h3>School Profile</h3>
+<p>বিদ্যালয়ের পরিচিতি, লক্ষ্য, উদ্দেশ্য ও অন্যান্য তথ্য।</p>
+</div>
 
-        <p>
-            Shubhadisha Child Academy শিক্ষার্থীদের
-            মানসম্মত শিক্ষা, শৃঙ্খলা ও নৈতিক মূল্যবোধের
-            মাধ্যমে ভবিষ্যতের জন্য প্রস্তুত করতে কাজ করে।
-        </p>
+<div class="card">
+<h3>School Rules</h3>
+<p>বিদ্যালয়ের নিয়ম-কানুন ও আচরণবিধি।</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Academic Information</h3>
+<p>শ্রেণি, বিষয়, পরীক্ষা ও শিক্ষাবর্ষ সংক্রান্ত তথ্য।</p>
+</div>
+
+<div class="card">
+<h3>Contact Information</h3>
+<p>বিদ্যালয়ের যোগাযোগের তথ্য।</p>
+</div>
+
+</div>
+
+
+<h2 id="documents" class="section-title">
+📁 School Management Documents
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📋 School Registration</h3>
+
+<div class="doc">
+<span>School Registration Document</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>School Recognition/NOC</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>School Profile</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>👨‍🏫 Staff Documents</h3>
+
+<div class="doc">
+<span>Staff Particulars</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Appointment Letter</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Service Rules</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Leave Rules</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>📚 Academic Documents</h3>
+
+<div class="doc">
+<span>Academic Calendar</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Class Routine</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Exam Routine</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Syllabus</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>📝 Examination</h3>
+
+<div class="doc">
+<span>Question Papers</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Marksheet Format</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Report Card</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Result</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>💰 Accounts & Fees</h3>
+
+<div class="doc">
+<span>Fee Structure</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Salary Register</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Fee Receipt</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Accounts Documents</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>🛡️ Safety & Compliance</h3>
+
+<div class="doc">
+<span>Fire Safety Document</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Building Safety</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Health & Safety</span>
+<a href="#">View</a>
+</div>
+
+<div class="doc">
+<span>Self Declaration</span>
+<a href="#">View</a>
+</div>
+
+</div>
+
+</div>
+
+
+<h2 id="academic" class="section-title">
+📖 Academic Management
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Student Admission</h3>
+<p>Admission form, student information এবং admission records.</p>
+</div>
+
+<div class="card">
+<h3>Attendance</h3>
+<p>Student ও staff attendance management.</p>
+</div>
+
+<div class="card">
+<h3>Examination</h3>
+<p>পরীক্ষা, marksheet ও result management.</p>
+</div>
+
+<div class="card">
+<h3>Certificates</h3>
+<p>Transfer Certificate ও অন্যান্য certificate format.</p>
+</div>
+
+</div>
+
+
+<h2 id="staff" class="section-title">
+👨‍🏫 Staff Management
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Staff Register</h3>
+<p>শিক্ষক ও কর্মীদের প্রয়োজনীয় তথ্য।</p>
+</div>
+
+<div class="card">
+<h3>Duty Schedule</h3>
+<p>Staff duty ও responsibility information.</p>
+</div>
+
+<div class="card">
+<h3>Salary</h3>
+<p>Salary-related records ও documents.</p>
+</div>
+
+<div class="card">
+<h3>Leave Management</h3>
+<p>Leave application ও leave record.</p>
+</div>
+
+</div>
+
+
+<h2 class="section-title">
+📢 Notice Board
+</h2>
+
+<div class="notice">
+
+<strong>Important Notice</strong>
+
+<p>
+বিদ্যালয়ের নতুন Notice এখানে প্রকাশ করা হবে।
+</p>
+
+</div>
+
+
+<section id="contact" class="contact">
+
+<h2>📞 Contact Us</h2>
+
+<p><strong>Shubhadisha Child Academy</strong></p>
+
+<p>📍 Jalpaiguri, West Bengal</p>
+
+<p>📞 School Office: Add Number</p>
+
+<p>📧 Email: Add Email</p>
 
 </section>
 
-<section id="academics">
-
-    <h2 class="title">Our Academics</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="icon">📚</div>
-            <h3>Quality Education</h3>
-            <p>মানসম্মত ও আধুনিক শিক্ষা ব্যবস্থা।</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">👨‍🏫</div>
-            <h3>Experienced Teachers</h3>
-            <p>দক্ষ ও দায়িত্বশীল শিক্ষক-শিক্ষিকা।</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🏆</div>
-            <h3>Student Development</h3>
-            <p>শিক্ষার্থীদের সর্বাঙ্গীণ বিকাশ।</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="notice">
-
-    <h2 class="title">Notice Board</h2>
-
-    <div class="notice">
-        📢 নতুন শিক্ষাবর্ষের ভর্তি কার্যক্রম চলছে।
-    </div>
-
-    <div class="notice">
-        📢 পরীক্ষার সময়সূচি শীঘ্রই প্রকাশ করা হবে।
-    </div>
-
-    <div class="notice">
-        📢 অভিভাবকদের বিদ্যালয়ের অফিসে যোগাযোগ করার অনুরোধ করা হচ্ছে।
-    </div>
-
-</section>
-
-<section class="admission" id="admission">
-
-    <h2 class="title">Online Admission</h2>
-
-    <div class="form">
-
-        <input type="text" placeholder="Student Name">
-
-        <input type="text" placeholder="Father's Name">
-
-        <input type="text" placeholder="Mother's Name">
-
-        <input type="date">
-
-        <select>
-            <option>Select Class</option>
-            <option>Nursery</option>
-            <option>LKG</option>
-            <option>UKG</option>
-            <option>Class 1</option>
-            <option>Class 2</option>
-            <option>Class 3</option>
-            <option>Class 4</option>
-            <option>Class 5</option>
-            <option>Class 6</option>
-            <option>Class 7</option>
-            <option>Class 8</option>
-            <option>Class 9</option>
-            <option>Class 10</option>
-        </select>
-
-        <input type="tel" placeholder="Mobile Number">
-
-        <textarea rows="4"
-        placeholder="Address"></textarea>
-
-        <button class="button" type="button"
-        onclick="alert('Admission form submitted successfully!')">
-            Submit Admission
-        </button>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2 class="title">Contact Us</h2>
-
-    <div class="contact">
-
-        <h3>Shubhadisha Child Academy</h3>
-
-        <p>📍 Bhandani, Dhupguri, Jalpaiguri</p>
-
-        <p>📞 9002062231</p>
-
-        <p>👨‍💼 Head Teacher: Ramkrishna Roy</p>
-
-        <p>🕘 School Time: 9:00 AM – 4:00 PM</p>
-
-        <br>
-
-        <a class="button" href="tel:9002062231">
-            📞 Call School
-        </a>
-
-    </div>
-
-</section>
+</div>
 
 <footer>
 
-    <h3>Shubhadisha Child Academy</h3>
+<p>© 2026 Shubhadisha Child Academy</p>
 
-    <p>Education • Discipline • Success</p>
-
-    <p>© 2026 All Rights Reserved.</p>
+<p>School Management & Document Portal</p>
 
 </footer>
 
